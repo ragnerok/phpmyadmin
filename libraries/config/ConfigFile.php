@@ -547,7 +547,7 @@ class ConfigFile
     {
         $tmp_subdir = null;
         if (! empty($GLOBALS['cfg']['TempDir']) && @is_writable($GLOBALS['cfg']['TempDir'])) {
-        $tmp_subdir = $GLOBALS['cfg']['TempDir'];
+            $tmp_subdir = $GLOBALS['cfg']['TempDir'];
         } else {
             $tmp_subdir = ini_get('upload_tmp_dir');
             if (empty($tmp_subdir)) {
